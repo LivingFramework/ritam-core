@@ -22,7 +22,7 @@ Mahdi Advisory 008 named this explicitly: "Treat documentation coherence as a go
 1. **Runtime** — the code reflects the change
 2. **Tests** — the change is covered by new or updated tests
 3. **Specification** — the relevant CH or architecture document reflects the change
-4. **Historical record** — SESSION-LOG, CHANGELOG, and/or HANDOFF updated
+4. **Historical record** — session log, changelog, and/or handoff notes updated
 
 **One artifact missing = change incomplete.**
 
@@ -39,7 +39,7 @@ This rule applies to:
 
 This rule does NOT apply to:
 - Pure research entries (new EQ, new OQ, new INSIGHT) — these are append-only records, not changes to the architecture
-- Session-level logging (HANDOFF updates, LEDGER entries) — these are always done at session close regardless
+- Session-level logging (handoff updates, ledger entries) — these are always done at session close regardless
 - Housekeeping and file maintenance
 
 ---
@@ -62,6 +62,6 @@ The four-artifact check becomes part of every future code review and every sessi
 
 ## Consequences
 
-- GAP-6 remediation this session must produce: runtime fix + new tests + INSIGHT/ADR update + SESSION-LOG entry
+- GAP-6 remediation this session must produce: runtime fix + new tests + INSIGHT/ADR update + session log entry
 - CH1–CH9 spec writing (Phase 2) must stay in sync with the runtime as chapters are written
 - Any future primitive interface change requires a spec chapter update before the change is considered merged

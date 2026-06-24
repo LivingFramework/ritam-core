@@ -199,7 +199,6 @@ Kill Tests were the primary test instrument before the Outcome Test transition. 
 | Advisory 004 | 2026-06-21 | ChatGPT/Mahdi + Claude (fresh) + Gemini + Perplexity | Gate B multi-AI cold peer review | ⚠️ PASS WITH QUALIFICATIONS |
 | Advisory 005 | 2026-06-21 | Mahdi (ChatGPT) | Post ADR-016 strategic review + v1.0 advisory | 📋 FINDING — execute S097 as planned; GAP-1 highest priority; external reproduction is next frontier |
 
-**Identity note:** Mahdi = ChatGPT. Rishi's affectionate name for the AI system. All Mahdi advisories are from ChatGPT. See ADVISORY_LOG.md for permanent identity clarification.
 
 ---
 

@@ -102,7 +102,7 @@ None of the ten invariants address the structural design of governance primitive
 ## Implementation
 
 **Immediate actions:**
-1. Add I11 to the invariant table in RITAM-STATE.md and CLAUDE.md ARCHITECTURE SNAPSHOT
+1. Add I11 to the invariant table in the architecture reference documents
 2. Add a retrospective note to GovernanceMonitor and GovernanceGateway documentation identifying their estimation mechanisms (GovernanceMonitor uses IQR over a rolling baseline — the estimation mechanism is the baseline construction; GovernanceGateway uses the Monitor's output)
 3. Add I11 as a design checkpoint in future prototype specification templates (parallel to the governance checkpoints required by I1/ADR-002)
 
