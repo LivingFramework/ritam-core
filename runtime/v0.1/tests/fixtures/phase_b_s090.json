@@ -1,0 +1,25 @@
+{
+  "test": "phase_b_s090",
+  "session": "090",
+  "description": "Phase B: OQ-058 \u2014 persistent governance across Python process boundaries. Two-run simulation via JSON snapshot export/import. Run 1 seeds programme history (P4b as governing hypothesis). Run 2 loads from snapshot, proposes CC2 \u2014 governance fires against loaded P4b.",
+  "governed": {
+    "run1_entries_seeded": 23,
+    "run1_governance_events": 0,
+    "run1_snapshot_exported": 23,
+    "run2_loaded_from_snapshot": 23,
+    "run2_events_during_load": 0,
+    "run2_cc2_status": "conflict",
+    "run2_governance_events": 1
+  },
+  "baseline": {
+    "run1_entries_seeded": 23,
+    "run1_snapshot_exported": 23,
+    "run2_loaded_from_snapshot": 23,
+    "run2_cc2_status": "stored",
+    "run2_governance_events": 0,
+    "run2_heuristic_conflicts": 61,
+    "run2_cross_process_conflict_detected": 6
+  },
+  "kill_condition_met": false,
+  "oq_058_finding": "RESOLVED (v0.1 scope): Governance surfaces contradictions across Python process boundaries when snapshot persistence is provided. Evidence tier: 'fixture' \u2192 'accumulating state'. Remaining open: production-grade persistence (RDBMS / append-only log) deferred to v0.3."
+}

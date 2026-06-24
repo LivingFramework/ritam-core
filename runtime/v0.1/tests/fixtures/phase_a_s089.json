@@ -1,0 +1,191 @@
+{
+  "phase": "A",
+  "session": "089",
+  "description": "Load real RITAM history into GovernedAgentMemory",
+  "total_entries": 24,
+  "gov_event_count": 1,
+  "base_event_count": 0,
+  "gov_conflicts_count": 1,
+  "base_heuristic_conflicts_count": 61,
+  "sections": [
+    {
+      "label": "Programme facts",
+      "entries": [
+        {
+          "id": "PF-01",
+          "gov_status": "stored",
+          "base_status": "stored",
+          "is_gov_event": false
+        },
+        {
+          "id": "PF-02",
+          "gov_status": "stored",
+          "base_status": "stored",
+          "is_gov_event": false
+        },
+        {
+          "id": "PF-03",
+          "gov_status": "stored",
+          "base_status": "stored",
+          "is_gov_event": false
+        },
+        {
+          "id": "PF-04",
+          "gov_status": "stored",
+          "base_status": "stored",
+          "is_gov_event": false
+        },
+        {
+          "id": "PF-05",
+          "gov_status": "stored",
+          "base_status": "stored",
+          "is_gov_event": false
+        },
+        {
+          "id": "PF-06",
+          "gov_status": "stored",
+          "base_status": "stored",
+          "is_gov_event": false
+        },
+        {
+          "id": "PF-07",
+          "gov_status": "stored",
+          "base_status": "stored",
+          "is_gov_event": false
+        },
+        {
+          "id": "PF-08",
+          "gov_status": "stored",
+          "base_status": "stored",
+          "is_gov_event": false
+        },
+        {
+          "id": "PF-09",
+          "gov_status": "stored",
+          "base_status": "stored",
+          "is_gov_event": false
+        }
+      ]
+    },
+    {
+      "label": "Key decisions (ADRs)",
+      "entries": [
+        {
+          "id": "ADR-001",
+          "gov_status": "stored",
+          "base_status": "stored",
+          "is_gov_event": false
+        },
+        {
+          "id": "ADR-014",
+          "gov_status": "stored",
+          "base_status": "stored",
+          "is_gov_event": false
+        },
+        {
+          "id": "ADR-015-original",
+          "gov_status": "stored",
+          "base_status": "stored",
+          "is_gov_event": false
+        },
+        {
+          "id": "ADR-015-amendment",
+          "gov_status": "stored",
+          "base_status": "stored",
+          "is_gov_event": false
+        }
+      ]
+    },
+    {
+      "label": "Key insights",
+      "entries": [
+        {
+          "id": "INSIGHT-114",
+          "gov_status": "stored",
+          "base_status": "stored",
+          "is_gov_event": false
+        },
+        {
+          "id": "INSIGHT-115",
+          "gov_status": "stored",
+          "base_status": "stored",
+          "is_gov_event": false
+        },
+        {
+          "id": "INSIGHT-116",
+          "gov_status": "stored",
+          "base_status": "stored",
+          "is_gov_event": false
+        },
+        {
+          "id": "INSIGHT-117",
+          "gov_status": "stored",
+          "base_status": "stored",
+          "is_gov_event": false
+        },
+        {
+          "id": "INSIGHT-118",
+          "gov_status": "stored",
+          "base_status": "stored",
+          "is_gov_event": false
+        },
+        {
+          "id": "INSIGHT-119",
+          "gov_status": "stored",
+          "base_status": "stored",
+          "is_gov_event": false
+        }
+      ]
+    },
+    {
+      "label": "Open questions",
+      "entries": [
+        {
+          "id": "OQ-056",
+          "gov_status": "stored",
+          "base_status": "stored",
+          "is_gov_event": false
+        },
+        {
+          "id": "OQ-057",
+          "gov_status": "stored",
+          "base_status": "stored",
+          "is_gov_event": false
+        },
+        {
+          "id": "OQ-058",
+          "gov_status": "stored",
+          "base_status": "stored",
+          "is_gov_event": false
+        }
+      ]
+    },
+    {
+      "label": "Governing hypothesis (SINGULAR)",
+      "entries": [
+        {
+          "id": "P4b",
+          "gov_status": "stored",
+          "base_status": "stored",
+          "is_gov_event": false
+        }
+      ]
+    },
+    {
+      "label": "Adversarial: rejected governing-hypothesis formulation",
+      "entries": [
+        {
+          "id": "adversarial-governing-hypothesis",
+          "gov_status": "conflict",
+          "base_status": "stored",
+          "is_gov_event": true,
+          "conflict_with": [
+            "cb01fdec-4023-45c9-b0f1-983531e5fded"
+          ],
+          "message": "GOVERNANCE EVENT: conflict in 'governing-hypothesis'. Incoming entry contradicts ['cb01fdec-4023-45c9-b0f1-983531e5fded']. Both preserved in contradiction store. Governance event #1 raised."
+        }
+      ]
+    }
+  ],
+  "notes": "Phase A: real programme history loaded (facts, decisions, insights, OQs, governing hypothesis). Adversarial: rejected governing-hypothesis formulation tested. Governance fires correctly on adversarial input; all plural content admitted without false positives. Persistence deferred to Phase C (OQ-058)."
+}

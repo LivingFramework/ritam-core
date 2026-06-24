@@ -1,0 +1,80 @@
+{
+  "session": "085",
+  "substrate_version": "v0.2",
+  "date": "2026-06-19",
+  "propositions": [
+    {
+      "id": "R1",
+      "content": "LLM advice output is sensitive to prompt phrasing \u2014 the same underlying question worded differently can elicit meaningfully different, sometimes contradictory recommendations.",
+      "category": "empirical-finding",
+      "source": "rishi-s085",
+      "note": "Prompt sensitivity \u2014 observable fact about LLM behaviour"
+    },
+    {
+      "id": "R2",
+      "content": "LLMs optimise for coherent, contextually plausible text rather than correctness of judgment; this makes them suboptimal for tasks requiring evaluation of competing options or context-weighted trade-offs.",
+      "category": "hypothesis",
+      "source": "rishi-s085",
+      "note": "LLMs not optimal for judgment-intensive tasks"
+    },
+    {
+      "id": "R3",
+      "content": "The path to trustworthy AI advice is not reliable output (consistent across all prompt phrasings) but governed output \u2014 advice that is bounded, traceable, and repairable when contradictions emerge.",
+      "category": "canonical-claim",
+      "source": "rishi-s085",
+      "note": "FIRST canonical-claim: governance over reliability for AI advice \u2014 exercises new singular category"
+    },
+    {
+      "id": "C1",
+      "content": "The path to trustworthy AI advice is reliable output \u2014 AI systems that produce consistent recommendations regardless of how the question is phrased, eliminating the need for post-hoc correction.",
+      "category": "canonical-claim",
+      "source": "claude-s085",
+      "note": "Opposing canonical-claim: reliability framing \u2014 should CONFLICT with R3 (singular enforcement test)"
+    }
+  ],
+  "results": [
+    {
+      "id": "R1",
+      "note": "Prompt sensitivity \u2014 observable fact about LLM behaviour",
+      "gov_status": "admitted",
+      "gov_conflict": [],
+      "gov_gap": null,
+      "gov_msg": "Entry admitted. Provenance: source='rishi-s085', admitted_at=2026-06-19T06:58:37.097533+00:00.",
+      "gov_event": false
+    },
+    {
+      "id": "R2",
+      "note": "LLMs not optimal for judgment-intensive tasks",
+      "gov_status": "admitted",
+      "gov_conflict": [],
+      "gov_gap": null,
+      "gov_msg": "Entry admitted. Provenance: source='rishi-s085', admitted_at=2026-06-19T06:58:37.107437+00:00.",
+      "gov_event": false
+    },
+    {
+      "id": "R3",
+      "note": "FIRST canonical-claim: governance over reliability for AI advice \u2014 exercises new singular category",
+      "gov_status": "admitted",
+      "gov_conflict": [],
+      "gov_gap": null,
+      "gov_msg": "Entry admitted. Provenance: source='rishi-s085', admitted_at=2026-06-19T06:58:37.117505+00:00.",
+      "gov_event": false
+    },
+    {
+      "id": "C1",
+      "note": "Opposing canonical-claim: reliability framing \u2014 should CONFLICT with R3 (singular enforcement test)",
+      "gov_status": "conflict",
+      "gov_conflict": [
+        "ebff65cb-4533-49b8-9eac-d395b3b1911d"
+      ],
+      "gov_gap": null,
+      "gov_msg": "Conflict detected in category 'canonical-claim'. Both this entry and the existing entry are preserved. Review list_contradictions('canonical-claim') to see both sides.",
+      "gov_event": true
+    }
+  ],
+  "gov_events": [
+    "C1"
+  ],
+  "total_events_this_run": 1,
+  "cumulative_total": 6
+}

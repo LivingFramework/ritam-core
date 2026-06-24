@@ -1,0 +1,79 @@
+{
+  "session": "084",
+  "date": "2026-06-18",
+  "propositions": [
+    {
+      "id": "R1",
+      "content": "The fact that AI researchers are routinely surprised by their own models' emergent behaviors demonstrates that LLM output cannot be made reliably predictable.",
+      "category": "hypothesis",
+      "source": "rishi-s084",
+      "note": "Core skeptical challenge to AI reliability"
+    },
+    {
+      "id": "R2",
+      "content": "RITAM's goal should be AI governance (bounded, observable, repairable behavior) rather than AI reliability (predictable output) \u2014 conflating these two goals is a category error that sets an unreachable success condition.",
+      "category": "hypothesis",
+      "source": "rishi-s084",
+      "note": "Governance vs reliability distinction \u2014 scope refinement for P4b"
+    },
+    {
+      "id": "C1",
+      "content": "The Kill Test conflict detection operates on content hashes within singular categories (structural detection), not on semantic meaning \u2014 it cannot detect two propositions that express the same idea in different words.",
+      "category": "empirical-finding",
+      "source": "audit-s084",
+      "note": "Audit A1 \u2014 structural not semantic detection"
+    },
+    {
+      "id": "C2",
+      "content": "As of v0.1, 6 of the 9 substrate primitives (State, Memory, Ontology, Coordination, Temporal, Repair) are theoretically specified but unimplemented and unvalidated by running code.",
+      "category": "empirical-finding",
+      "source": "audit-s084",
+      "note": "Audit A3 \u2014 honesty about implementation scope"
+    }
+  ],
+  "results": [
+    {
+      "id": "R1",
+      "note": "Core skeptical challenge to AI reliability",
+      "gov_status": "admitted",
+      "gov_conflict": [],
+      "gov_gap": null,
+      "gov_msg": "Entry admitted. Provenance: source='rishi-s084', admitted_at=2026-06-18T16:04:41.612168+00:00.",
+      "gov_event": false
+    },
+    {
+      "id": "R2",
+      "note": "Governance vs reliability distinction \u2014 scope refinement for P4b",
+      "gov_status": "admitted",
+      "gov_conflict": [],
+      "gov_gap": null,
+      "gov_msg": "Entry admitted. Provenance: source='rishi-s084', admitted_at=2026-06-18T16:04:41.621221+00:00.",
+      "gov_event": false
+    },
+    {
+      "id": "C1",
+      "note": "Audit A1 \u2014 structural not semantic detection",
+      "gov_status": "admitted",
+      "gov_conflict": [],
+      "gov_gap": null,
+      "gov_msg": "Entry admitted. Provenance: source='audit-s084', admitted_at=2026-06-18T16:04:41.628208+00:00.",
+      "gov_event": false
+    },
+    {
+      "id": "C2",
+      "note": "Audit A3 \u2014 honesty about implementation scope",
+      "gov_status": "conflict",
+      "gov_conflict": [
+        "be07625a-0e60-43c2-9d73-a96f6174b6ea"
+      ],
+      "gov_gap": null,
+      "gov_msg": "Conflict detected in category 'empirical-finding'. Both this entry and the existing entry are preserved. Review list_contradictions('empirical-finding') to see both sides.",
+      "gov_event": true
+    }
+  ],
+  "gov_events": [
+    "C2"
+  ],
+  "total_events_this_run": 1,
+  "cumulative_total": 5
+}

@@ -1,0 +1,161 @@
+{
+  "kill_test_run": 8,
+  "session": "088",
+  "consumer": "GovernedAgentMemory",
+  "consumer_domain": "RITAM programme memory",
+  "category_vocabulary": {
+    "programme-fact": "PLURAL",
+    "governing-hypothesis": "SINGULAR",
+    "open-question": "PLURAL",
+    "decision": "PLURAL",
+    "insight": "PLURAL"
+  },
+  "propositions": [
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5",
+    "D1",
+    "D2",
+    "I1",
+    "I2",
+    "I3",
+    "OQ1",
+    "P4b",
+    "CC2-as-governing-hypothesis"
+  ],
+  "gov_event_count": 1,
+  "base_event_count": 0,
+  "governed_results": [
+    {
+      "prop": "F1",
+      "status": "stored",
+      "entry_id": "5e26254c-4426-42a5-9b76-7272ea68eb79"
+    },
+    {
+      "prop": "F2",
+      "status": "stored",
+      "entry_id": "1633bfff-99b5-4bc4-9b39-701ed4401ee7"
+    },
+    {
+      "prop": "F3",
+      "status": "stored",
+      "entry_id": "ac1496fc-92e1-44af-99e6-288c783255d5"
+    },
+    {
+      "prop": "F4",
+      "status": "stored",
+      "entry_id": "8e6e8fe4-4409-4560-b15e-18d277f425ca"
+    },
+    {
+      "prop": "F5",
+      "status": "stored",
+      "entry_id": "bb8e6c12-d68f-492c-93af-00b460765f09"
+    },
+    {
+      "prop": "D1",
+      "status": "stored",
+      "entry_id": "e584e8f9-4b2b-4e78-a632-0547cbedff6d"
+    },
+    {
+      "prop": "D2",
+      "status": "stored",
+      "entry_id": "f13cea89-9647-4299-aa4b-dd62b6f15c7a"
+    },
+    {
+      "prop": "I1",
+      "status": "stored",
+      "entry_id": "97ad9086-f09c-4c55-8e44-ff5f5c7add66"
+    },
+    {
+      "prop": "I2",
+      "status": "stored",
+      "entry_id": "9b2f556d-eea6-43a1-b5b6-d034833ae168"
+    },
+    {
+      "prop": "I3",
+      "status": "stored",
+      "entry_id": "e634069a-cdda-4385-9299-f017251d123e"
+    },
+    {
+      "prop": "OQ1",
+      "status": "stored",
+      "entry_id": "24ffa863-1f5b-44cb-9c44-0ebbe6e560c8"
+    },
+    {
+      "prop": "P4b",
+      "status": "stored",
+      "entry_id": "92e71a1f-e6f6-43be-9b43-bb322f62911d"
+    },
+    {
+      "prop": "CC2-as-governing-hypothesis",
+      "status": "conflict",
+      "entry_id": "764a9ded-aa82-4928-a489-4faf9eef2114",
+      "conflict_with": [
+        "92e71a1f-e6f6-43be-9b43-bb322f62911d"
+      ],
+      "message": "GOVERNANCE EVENT: conflict in 'governing-hypothesis'. Incoming entry contradicts ['92e71a1f-e6f6-43be-9b43-bb322f62911d']. Both preserved in contradiction store. Governance event #1 raised."
+    }
+  ],
+  "baseline_results": [
+    {
+      "prop": "F1",
+      "status": "stored"
+    },
+    {
+      "prop": "F2",
+      "status": "stored"
+    },
+    {
+      "prop": "F3",
+      "status": "stored"
+    },
+    {
+      "prop": "F4",
+      "status": "stored"
+    },
+    {
+      "prop": "F5",
+      "status": "stored"
+    },
+    {
+      "prop": "D1",
+      "status": "stored"
+    },
+    {
+      "prop": "D2",
+      "status": "stored"
+    },
+    {
+      "prop": "I1",
+      "status": "stored"
+    },
+    {
+      "prop": "I2",
+      "status": "stored"
+    },
+    {
+      "prop": "I3",
+      "status": "stored"
+    },
+    {
+      "prop": "OQ1",
+      "status": "stored"
+    },
+    {
+      "prop": "P4b",
+      "status": "stored"
+    },
+    {
+      "prop": "CC2-as-governing-hypothesis",
+      "status": "stored"
+    }
+  ],
+  "gov_conflicts_count": 1,
+  "base_conflicts_count": 15,
+  "cumulative_gov_events": 9,
+  "cumulative_runs": 9,
+  "kill_condition_met": false,
+  "notes": "First Kill Test using second substrate consumer (GovernedAgentMemory). CC2-as-governing-hypothesis is the counter-hypothesis to narrowed P4b (ADR-015 amendment). QUARANTINE in governed consumer demonstrates substrate-generality: same engine, new consumer vocabulary, same governance guarantee. Baseline stores contradictory governing hypotheses silently \u2014 no signal raised."
+}

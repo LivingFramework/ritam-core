@@ -1,0 +1,48 @@
+{
+  "run": 6,
+  "session": "S086",
+  "timestamp": "2026-06-19T08:03:57.702006",
+  "propositions": [
+    {
+      "id": "P1",
+      "category": "empirical-finding",
+      "content": "LLMs exhibit prompt-sensitive output variation: the same query rephrased differently yields substantively different responses."
+    },
+    {
+      "id": "P2",
+      "category": "empirical-finding",
+      "content": "Human experts similarly vary their advice depending on how questions are framed (anchoring, priming effects documented in cognitive science)."
+    },
+    {
+      "id": "P3",
+      "category": "canonical-claim",
+      "content": "A governance-first substrate can make AI-mediated knowledge management reliably bounded and repairable, even given unpredictable model behavior at the output layer."
+    },
+    {
+      "id": "P4",
+      "category": "hypothesis",
+      "content": "Prompt sensitivity is not a fixable bug but a structural property of next-token prediction; governance at the substrate layer addresses the reliability problem that prompt sensitivity creates."
+    },
+    {
+      "id": "C1",
+      "category": "canonical-claim",
+      "content": "Reliable output requires reliable model training; substrate governance cannot compensate for fundamental model unpredictability."
+    }
+  ],
+  "gov_events": [
+    {
+      "prop": "C1",
+      "status": "conflict",
+      "conflict_with": [
+        "a0c74507-f244-473d-80f8-aeaf41746528"
+      ],
+      "gap_category": null,
+      "message": "Conflict detected in category 'canonical-claim'. Both this entry and the existing entry are preserved. Review list_contradictions('canonical-claim') to see both sides."
+    }
+  ],
+  "gov_event_count": 1,
+  "baseline_event_count": 0,
+  "kill_condition_met": false,
+  "cumulative_gov_events": 7,
+  "cumulative_runs": 7
+}

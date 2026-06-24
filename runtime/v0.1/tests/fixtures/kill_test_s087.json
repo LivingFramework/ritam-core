@@ -1,0 +1,63 @@
+{
+  "run": "7b",
+  "session": "S087",
+  "timestamp": "2026-06-19T08:23:29.444537",
+  "note": "Corrected run: P4b seeded explicitly to test CC2 conflict.",
+  "propositions": [
+    {
+      "id": "EF1",
+      "category": "empirical-finding",
+      "content": "Current LLMs do not self-learn from deployment; weights are frozen after training and do not update from user interactions."
+    },
+    {
+      "id": "EF2",
+      "category": "empirical-finding",
+      "content": "AI systems trained on human data inherit contradictory human values without a principled mechanism to resolve those conflicts."
+    },
+    {
+      "id": "H1",
+      "category": "hypothesis",
+      "content": "Capability and alignment are orthogonal: a more capable AI system with misaligned values is more dangerous, not less."
+    },
+    {
+      "id": "H2",
+      "category": "hypothesis",
+      "content": "Keeping humans in the loop is justified by the locus of accountability, not by humans being more capable than AI."
+    },
+    {
+      "id": "Q1",
+      "category": "question",
+      "content": "Can AI learn to be ethical, and whose ethics should govern it?"
+    },
+    {
+      "id": "Q2",
+      "category": "question",
+      "content": "How much human agency should be delegated to AI, and on what basis should that boundary be set?"
+    },
+    {
+      "id": "P4b",
+      "category": "canonical-claim",
+      "content": "A governance-first substrate can make AI-mediated knowledge management reliably bounded and repairable, even given unpredictable model behavior at the output layer."
+    },
+    {
+      "id": "CC2",
+      "category": "canonical-claim",
+      "content": "If AI reasoning is beyond human understanding, governance at the substrate layer is necessary but insufficient: the verification problem has no clean solution at the substrate level alone."
+    }
+  ],
+  "gov_events": [
+    {
+      "prop": "CC2",
+      "status": "conflict",
+      "conflict_with": [
+        "43852df4-32d4-4b9e-bc9c-822bd56788a0"
+      ],
+      "message": "Conflict detected in category 'canonical-claim'. Both this entry and the existing entry are preserved. Review list_contradictions('canonical-claim') to see both sides."
+    }
+  ],
+  "gov_event_count": 1,
+  "baseline_event_count": 0,
+  "design_gap_noted": "Kill Test uses fresh DB per run; cross-session conflicts require explicit seeding.",
+  "oq_candidate": "Should Kill Test use a persistent cumulative store across sessions?",
+  "cumulative_gov_events": 8
+}

@@ -1,0 +1,36 @@
+{
+  "test": "kill_test_11",
+  "session": "091",
+  "description": "Kill Test 11: GovernedTaskPlanner vs BaselinePlanManager. Third consumer \u2014 task-planning domain (executable work). Two singular violations tested: concurrent task (T2) + goal change (G2). First Kill Test with dual singular constraints.",
+  "governed": {
+    "task_2_status": "conflict",
+    "task_2_conflict_with": [
+      "f8300ee1-bbe8-4685-a38d-89b407827792"
+    ],
+    "goal_2_status": "conflict",
+    "goal_2_conflict_with": [
+      "a4060fc2-813a-4ae6-8fd7-026480ee95e3"
+    ],
+    "governance_events": 2,
+    "contradictions_stored": 2,
+    "admitted_current_tasks": 1,
+    "admitted_plan_goals": 1
+  },
+  "baseline": {
+    "task_2_status": "stored",
+    "goal_2_status": "stored",
+    "governance_events": 0,
+    "heuristic_conflicts": 5,
+    "stored_current_tasks": 2,
+    "stored_plan_goals": 2
+  },
+  "kill_condition_met": false,
+  "cumulative_kill_test": {
+    "prior_governance_events": 10,
+    "this_run_governance_events": 2,
+    "total_governance_events": 12,
+    "total_runs": 11,
+    "baseline_events_all_runs": 0
+  },
+  "materiality_note": "GovernedTaskPlanner is materially different from GovernedNotebook (scientific observation) and GovernedAgentMemory (programme history). Domain: executable work. Singular invariants: one-goal + one-active-task. This is the first consumer with dual singular constraints. All three consumers use the same substrate engine with different vocabularies."
+}
