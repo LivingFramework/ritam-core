@@ -23,7 +23,7 @@ This document distinguishes three levels of claim throughout:
 
 An AI system that operates over time develops cognitive state: beliefs, memories, inferences, observations, contradictions. Unlike structured data in a database, this state is typically held with no governance — there is no principled mechanism for admission, no decay policy, no contradiction detection, and no observable repair path.
 
-The result is a cluster of failure modes that are well-documented empirically. No existing runtime layer addresses them at the substrate level — that gap is the founding premise of RITAM, not a finding derived from RITAM's own research:
+The result is a cluster of failure modes that are well-documented empirically. RITAM was founded on the hypothesis that no existing runtime layer addresses these failure modes as a unified governed substrate — that gap is the founding premise of RITAM, not a finding derived from RITAM's own research:
 
 **Drift.** Beliefs change through incremental updates with no record of what changed, when, or why. The system "believes" something different from what it believed an hour ago, with no visible transition.
 
@@ -53,6 +53,26 @@ The best analogy is infrastructure: as a database manages persistent structured 
 
 RITAM sits between a model (which generates) and an application (which consumes). Its job is to ensure that what persists between those two layers is internally consistent, appropriately aged, and governed by explicit rules rather than accumulation by default.
 
+```mermaid
+graph TD
+    A[AI Model / LLM] -->|generates beliefs, observations, hypotheses| B[RITAM Substrate]
+    B -->|governed persistent state| C[Application / Consumer]
+
+    subgraph B[RITAM Substrate]
+        direction LR
+        S[State] --- M[Memory]
+        M --- O[Ontology]
+        O --- G[Governance]
+        G --- E[Epistemic]
+        E --- CO[Coordination]
+        CO --- T[Temporal]
+        T --- OB[Observation]
+        OB --- R[Repair]
+    end
+```
+
+*The nine primitives are not independent modules — each carries load in cross-primitive scenarios. Disabling any one causes observable failure in the adversarial test suite.*
+
 ---
 
 ## 3. Why Nine Primitives
@@ -70,6 +90,8 @@ The nine primitives are not a feature list. They were derived by asking a specif
 | **Temporal** | The system has no time-awareness. An observation from ten years ago has the same urgency as one from this morning. Temporal ordering of evidence is invisible. |
 | **Observation** | Governance decisions are invisible. What was admitted, quarantined, or repaired cannot be audited or replayed. Diagnosis requires guesswork. |
 | **Repair** | Detected contradictions remain detected but unresolved. There is no principled path from "contradiction identified" to "substrate coherent again." |
+
+*This table establishes observed necessity in tested scenarios, not completeness — the minimum sufficient set remains an open question (see Section 5).*
 
 The nine primitives are not independent modules that can be selected à la carte. The adversarial audit (S110) confirmed that cross-primitive interactions carry load: Repair depends on Observation (you cannot repair what you cannot see); Coordination depends on Ontology (conflict detection requires shared vocabulary); Governance depends on Epistemic (admission criteria require confidence tracking). *(Inferred: removing any single primitive creates a detectable failure mode. The specific failure for each is observable in running code. Sufficiency — that nine is the minimum complete set — remains open.)*
 

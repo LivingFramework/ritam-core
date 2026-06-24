@@ -2,7 +2,7 @@
 
 **Created:** 2026-06-21, Session 097
 **Purpose:** Permanent historical anchor for the v1.0 declaration. Six months from now — or six years — this document answers the question: "Why was v1.0 declared, and what exactly was the evidence?"
-**Recommended by:** Mahdi (ChatGPT) Advisory 005: "Because six months from now nobody — including Claude — will perfectly remember why v1.0 was declared. The declaration should be backed by a permanent evidence ledger."
+**Recommended by:** ChatGPT (external AI reviewer) Advisory 005: "Because six months from now nobody — including Claude — will perfectly remember why v1.0 was declared. The declaration should be backed by a permanent evidence ledger."
 **Status:** Append-only. Do not edit existing entries. Add new rows when evidence is added or superseded.
 
 ---
@@ -137,7 +137,7 @@ The v1.0 declaration rests on three criteria defined in ADR-016 (signed Session 
 - INSIGHT-114: Regime-Bounded Governance Sensitivity — governance detects abrupt categorical conflict reliably; misses gradual semantic drift systematically
 - INSIGHT-121: Cross-Domain Portability — a single governance engine can be reused across multiple consumer applications
 
-**Gate B process:** Advisory 004 — Multi-AI Cold Peer Review (Session 093). Four independent AI reviewers from three model families: ChatGPT/Mahdi, Claude (fresh session, cold), Gemini, Perplexity.
+**Gate B process:** Advisory 004 — Multi-AI Cold Peer Review (Session 093). Four independent AI reviewers from three model families: ChatGPT (external AI reviewer), Claude (fresh session, cold), Gemini, Perplexity.
 
 **Summary verdicts:**
 
@@ -193,11 +193,11 @@ Kill Tests were the primary test instrument before the Outcome Test transition. 
 
 | Advisory | Date | Reviewer | Scope | Verdict |
 |----------|------|----------|-------|---------|
-| Advisory 001 | 2026-06-19 | Mahdi (ChatGPT) | Session 088 state — consumer transfer significance, persistence gap, substrate-generality challenge | 📋 FINDING — consumer transfer is the important result; substrate-generality not yet demonstrated |
-| Advisory 002 | 2026-06-21 | Mahdi (ChatGPT) | Gate B claims — INSIGHT-114 + INSIGHT-121 | ⚠️ PASS WITH NARROWING (both claims) |
+| Advisory 001 | 2026-06-19 | ChatGPT (external AI reviewer) | Session 088 state — consumer transfer significance, persistence gap, substrate-generality challenge | 📋 FINDING — consumer transfer is the important result; substrate-generality not yet demonstrated |
+| Advisory 002 | 2026-06-21 | ChatGPT (external AI reviewer) | Gate B claims — INSIGHT-114 + INSIGHT-121 | ⚠️ PASS WITH NARROWING (both claims) |
 | Advisory 003 | 2026-06-21 | ChatGPT | 9 open questions — programme identity, Kill Test sufficiency, completion condition | 📋 FINDING — led to ADR-016 formalisation |
-| Advisory 004 | 2026-06-21 | ChatGPT/Mahdi + Claude (fresh) + Gemini + Perplexity | Gate B multi-AI cold peer review | ⚠️ PASS WITH QUALIFICATIONS |
-| Advisory 005 | 2026-06-21 | Mahdi (ChatGPT) | Post ADR-016 strategic review + v1.0 advisory | 📋 FINDING — execute S097 as planned; GAP-1 highest priority; external reproduction is next frontier |
+| Advisory 004 | 2026-06-21 | ChatGPT (external AI reviewer) + Claude (fresh) + Gemini + Perplexity | Gate B multi-AI cold peer review | ⚠️ PASS WITH QUALIFICATIONS |
+| Advisory 005 | 2026-06-21 | ChatGPT (external AI reviewer) | Post ADR-016 strategic review + v1.0 advisory | 📋 FINDING — execute S097 as planned; GAP-1 highest priority; external reproduction is next frontier |
 
 
 ---

@@ -10,6 +10,10 @@ The substrate is built from nine primitives (State, Memory, Ontology, Governance
 
 **[Technical Overview](architecture/overview/RITAM_TECHNICAL_OVERVIEW.md)** — What RITAM is, why nine primitives, what has been demonstrated, what remains open. Read this first.
 
+**[Foundations of RITAM](architecture/overview/FOUNDATIONS_OF_RITAM.md)** — The worldview: why governance must precede persistence, why nine primitives, what the evidence establishes, what it does not. The document that connects every other artifact.
+
+**[Why RITAM Might Be Wrong](architecture/overview/WHY_RITAM_MIGHT_BE_WRONG.md)** — Strongest objections, alternative explanations, open falsification targets. Read this alongside the Technical Overview.
+
 **[North Star](NORTH_STAR.md)** — Why RITAM exists and what counts as success.
 
 **[Substrate Definition](SUBSTRATE_DEFINITION.md)** — The precise definition of what a governed cognition substrate is and is not.
@@ -67,7 +71,7 @@ This is a research prototype demonstrating governed cognition architecture. It i
 
 ## License
 
-[To be determined before public release]
+Apache 2.0 — see [LICENSE](LICENSE)
 
 ---
 
