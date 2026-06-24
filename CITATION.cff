@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+title: "RITAM: A Governed Cognition Substrate"
+message: "If you use RITAM in your research, please cite it using the metadata below."
+type: software
+authors:
+  - name: "Living Framework AI"
+    email: livingframeworkai@gmail.com
+repository-code: "https://github.com/LivingFramework/ritam-core"
+abstract: >
+  RITAM is a governed cognition substrate — a runnable layer that sits beneath
+  an AI application and holds its cognitive state under explicit governance.
+  It implements nine substrate primitives (State, Memory, Ontology, Governance,
+  Epistemic, Coordination, Temporal, Observation, Repair) with 146 tests across
+  adversarial, integration, and buildability scenarios. v1.1.1 is a research
+  prototype demonstrating that governance-before-persistence produces measurably
+  different outcomes from ungoverned persistence.
+keywords:
+  - cognitive architecture
+  - ai governance
+  - governed cognition
+  - ai substrate
+  - knowledge management
+  - state management
+  - contradiction detection
+  - epistemic state
+  - long-horizon ai
+  - ai research
+  - research prototype
+license: Apache-2.0
+version: "1.1.1"
+date-released: "2026-06-24"
