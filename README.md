@@ -21,8 +21,8 @@ The substrate is built from nine primitives (State, Memory, Ontology, Governance
 Requirements: Python 3.9+
 
 ```bash
-git clone https://github.com/LivingFramework/ritam-governed-cognition-substrate.git
-cd ritam-governed-cognition-substrate
+git clone https://github.com/LivingFramework/ritam-core.git
+cd ritam-core
 pip install -e runtime/v0.1
 cd runtime/v0.1
 python -m pytest tests/ -q
