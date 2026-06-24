@@ -1,5 +1,7 @@
 # RITAM — Governed Cognition Substrate
 
+[![Tests](https://github.com/LivingFramework/ritam-core/actions/workflows/tests.yml/badge.svg)](https://github.com/LivingFramework/ritam-core/actions/workflows/tests.yml)
+
 RITAM is a **governed cognition substrate**: a runnable layer that sits beneath an application and holds its cognitive state under explicit governance. As a database manages persistent structured data, RITAM manages persistent cognitive state — with governed admission, epistemic tracking, contradiction detection, and observable repair. It is infrastructure, not an application, model, or agent.
 
 The substrate is built from nine primitives (State, Memory, Ontology, Governance, Epistemic, Coordination, Temporal, Observation, Repair), each addressing a specific failure mode that appears in AI systems operating without a governance layer: belief drift, contradiction accumulation, uncontrolled decay, and opacity of reasoning. All nine primitives are implemented, integrated, and adversarially audited. Version v1.1.1 passes 146/146 tests.
