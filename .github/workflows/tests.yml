@@ -21,9 +21,9 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
 
-    - name: Install RITAM runtime
+    - name: Install dependencies
       working-directory: runtime/v0.1
-      run: pip install -e .
+      run: pip install -e . pytest
 
     - name: Run tests
       working-directory: runtime/v0.1
