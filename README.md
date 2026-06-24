@@ -8,7 +8,7 @@ The substrate is built from nine primitives (State, Memory, Ontology, Governance
 
 ## Start here
 
-**[Technical Overview](architecture/orientation/RITAM_TECHNICAL_OVERVIEW.md)** — What RITAM is, why nine primitives, what has been demonstrated, what remains open. Read this first.
+**[Technical Overview](architecture/overview/RITAM_TECHNICAL_OVERVIEW.md)** — What RITAM is, why nine primitives, what has been demonstrated, what remains open. Read this first.
 
 **[North Star](NORTH_STAR.md)** — Why RITAM exists and what counts as success.
 
