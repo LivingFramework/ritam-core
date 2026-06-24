@@ -6,7 +6,7 @@ authors:
   - name: "Living Framework AI"
     email: livingframeworkai@gmail.com
 repository-code: "https://github.com/LivingFramework/ritam-core"
-doi: "10.5281/zenodo.20827180"
+doi: "10.5281/zenodo.20834604"
 abstract: >
   RITAM is a governed cognition substrate — a runnable layer that sits beneath
   an AI application and holds its cognitive state under explicit governance.

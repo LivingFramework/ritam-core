@@ -1,7 +1,7 @@
 # RITAM — Governed Cognition Substrate
 
 [![Tests](https://github.com/LivingFramework/ritam-core/actions/workflows/tests.yml/badge.svg)](https://github.com/LivingFramework/ritam-core/actions/workflows/tests.yml)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20827180.svg)](https://doi.org/10.5281/zenodo.20827180)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20834604.svg)](https://doi.org/10.5281/zenodo.20834604)
 
 RITAM is a **governed cognition substrate**: a runnable layer that sits beneath an application and holds its cognitive state under explicit governance. As a database manages persistent structured data, RITAM manages persistent cognitive state — with governed admission, epistemic tracking, contradiction detection, and observable repair. It is infrastructure, not an application, model, or agent.
 
@@ -85,14 +85,14 @@ If you use RITAM in your research, please cite:
   year         = 2026,
   publisher    = {Zenodo},
   version      = {v1.1.1},
-  doi          = {10.5281/zenodo.20827180},
-  url          = {https://doi.org/10.5281/zenodo.20827180}
+  doi          = {10.5281/zenodo.20834604},
+  url          = {https://doi.org/10.5281/zenodo.20834604}
 }
 ```
 
 Or in plain text:
 
-> Living Framework AI (2026). *RITAM: A Governed Cognition Substrate* (v1.1.1). Zenodo. https://doi.org/10.5281/zenodo.20827180
+> Living Framework AI (2026). *RITAM: A Governed Cognition Substrate* (v1.1.1). Zenodo. https://doi.org/10.5281/zenodo.20834604
 
 ## License
 
