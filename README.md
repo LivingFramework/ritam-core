@@ -72,6 +72,28 @@ This is a research prototype demonstrating governed cognition architecture. It i
 
 ---
 
+---
+
+## Cite this work
+
+If you use RITAM in your research, please cite:
+
+```bibtex
+@software{living_framework_ai_2026_ritam,
+  author       = {Living Framework AI},
+  title        = {RITAM: A Governed Cognition Substrate},
+  year         = 2026,
+  publisher    = {Zenodo},
+  version      = {v1.1.1},
+  doi          = {10.5281/zenodo.20827180},
+  url          = {https://doi.org/10.5281/zenodo.20827180}
+}
+```
+
+Or in plain text:
+
+> Living Framework AI (2026). *RITAM: A Governed Cognition Substrate* (v1.1.1). Zenodo. https://doi.org/10.5281/zenodo.20827180
+
 ## License
 
 Apache 2.0 — see [LICENSE](LICENSE)
